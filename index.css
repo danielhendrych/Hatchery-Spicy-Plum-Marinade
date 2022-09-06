@@ -1,0 +1,94 @@
+.page {
+    background-color: #d9d9d9;
+    padding: 20px;
+    margin: 10px;
+}
+h1 {
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+.author {
+    margin-top: 0;
+    font-style: italic;
+}
+
+
+.introduction, .ingredients, .procedure {
+    padding: 10px 50px;
+    border: solid 1px goldenrod;
+    overflow: hidden;
+    word-wrap: break-word;
+    text-overflow: ellipsis;
+    white-space: normal;
+    
+}
+
+
+.introduction {
+    float: left;
+    margin-right:38px;
+    margin-bottom: 5px;
+    width: 50%;
+    min-width: 250px;
+}
+
+
+
+.ingredients {
+    float: left;
+    min-width: 250px;
+    height: 160px;
+}
+
+    .images {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    
+
+   .image-resize {
+    width: 100%;
+    height: auto;
+    padding: 5px;
+    max-width: 200px;
+   }
+   
+   
+img {
+    width: 30%;
+    height: auto;
+    margin-top: 0;
+  }
+
+.procedure {
+    min-width: 250px;
+    max-width: 1100px;
+}
+
+/* Styling of the list items*/
+ol {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    counter-reset: apples;
+}
+
+ol li:before {
+    content: counter(apples);
+    counter-increment: apples;
+    border: solid 1px goldenrod;
+    font-size: larger;
+    border-radius: 100%;
+    width: 1em;
+    height: 1em;
+    display: inline-block;
+    padding: 0.6em;
+    line-height: 1.0;
+    margin-right: 1em;
+    margin-bottom: 0.7em;
+}
+
+
